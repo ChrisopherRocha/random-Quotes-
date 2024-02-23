@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Quotes from './Dashboard/Quotes/Quotes'
+import Buttons from './Dashboard/Components/Buttons'
+import Footer from './Dashboard/Components/Footer'
+import QuotesAuthor from './Dashboard/Components/QuoteAuthor'
+import QuotesText from './Dashboard/Components/QuotesText'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Random Quotes Generator</h1>
+      <Quotes />
+      {/* <Buttons /> */}
+      <Footer />
+      {/* <QuotesAuthor /> */}
+      {/* <QuotesText /> */}
     </div>
   );
 }
