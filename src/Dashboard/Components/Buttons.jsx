@@ -1,9 +1,16 @@
 import React from 'react'
 
-function Buttons() {
+function Buttons(props) {
   return (
-    <div>
-      
+    <div className='buttons'>
+      <button 
+      style={{ backgroundColor: props.color}} 
+      className='button'
+      onClick={props.handleClick}
+      id={props.id}
+      >
+        New Quote
+    </button>
     </div>
   )
 }
